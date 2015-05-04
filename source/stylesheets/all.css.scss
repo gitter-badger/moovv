@@ -24,9 +24,9 @@
 
 @charset "utf-8";
 
-* {
-	outline: 5px solid red;
-}
+// * {
+// 	outline: 5px solid red;
+// }
 
 /* Typography */
 
@@ -45,9 +45,9 @@
 	src: url(../fonts/FontAwesome.otf);
 }
 
-* {
-	margin: 0px;
-}
+// * {
+// 	margin: 0px;
+// }
 
 h1, h2, h3, h4, h5, h6, p {
 	color: #FFF;
@@ -135,9 +135,32 @@ li {
 }
 
 form {
-	padding-top: 20px;
-	color: black;
+	padding-top: 0;
 	opacity: 0.8;
+	color: black;
+}
+
+// some custom media-queries for irregularities
+
+@media (min-width: 400px) {
+	input {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	ol {
+		text-align: center;
+		width: 340px;
+		li {
+			text-align: center;
+		}
+	}
+
+	.how-it-works {
+		width: 100px;
+		width:100px;
+	}
 }
 
 
