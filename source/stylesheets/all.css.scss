@@ -1,3 +1,5 @@
+// Settings
+
 @import "mixins";
 @import "variables";
 @import "debug";
@@ -17,40 +19,31 @@
 // @import "bootstrap/navs";
 // @import "bootstrap/navbar";
 
-
-// Defaults -----
-
-/* Base Styles */
-
 @charset "utf-8";
 
-// * {
-// 	outline: 5px solid red;
-// }
-
-/* Typography */
+// Typography
 
 @font-face {
 	font-family: Stag-Medium;
-	src: url(../fonts/Stag-Sans-Book.otf);
-}
+	src: url(../fonts/Stag-Sans-Book.otf); }
 
 @font-face {
 	font-family: Stag-Light;
-	src: url(../fonts/Stag-Sans-Light.otf);
-}
-
+	src: url(../fonts/Stag-Sans-Light.otf); }
 @font-face {
 	font-family: FontAwesome;
-	src: url(../fonts/FontAwesome.otf);
-}
+	src: url(../fonts/FontAwesome.otf); }
 
-// * {
-// 	margin: 0px;
-// }
+// Color variables
 
-h1, h2, h3, h4, h5, h6, p {
-	color: #FFF;
+$text-color: 			white;
+$negative-text-color: 	black;
+$logo-color: 			white;
+
+// Text styles
+
+h1, h2, h3, h4, h5, h6, p, ol, li {
+	color: $text-color;
 }
 
 h1 {
@@ -62,105 +55,79 @@ h1 {
 
 h4 {
 	font-family: "Stag-Medium";
-	color: #FFF;
+	font-size: 18px;
 	padding: 14px 0 0 0;
 	text-align: center;
-	font-size: 18px;
 }
 
 h5 {
 	font-family: Stag-Light;
-	text-align: center;
 	font-size: 18px;
+	text-align: center;
 }
 
-/* Base */
+ol {
+	width: 55%;
+	margin: 0 auto 0 auto;
+	font-family: Stag-Light;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 0 0 0;
+	li {
+	font-family: Stag-Light;
+	font-size: 18px;
+	text-align: left;
+	padding: 0 0 0 30px;
+	}
+}
+
+form {
+	padding-top: 0;
+	opacity: 0.8;
+	color: $negative-text-color;
+}
+
+// Base
 
 body {
-	background-color: #D8D8D8;
-	width: 100%;
-	height: 100vh;
 	background: url(../images/bg2-small.jpg) no-repeat center center fixed;
 	background-size: cover;
-	color: #FFF;
 }
 
-/* Styles */
+// Styles
 
 .header {
 	padding: 50px 0 0 0;
-}
-
-#logo {
+	#logo {
 	width: 8vh;
 	height: auto;
-	color: white;
+	color: $logo-color;
 	display: block;
 	margin: 0 auto 0 auto;
-	padding-left: 2px;
-}
-
-.logo-text {
+	padding-left: 2px; 
+	}
+	.logo-text {
 	margin-top: -20px;
 	padding-left: 12px;
-}
-
-#subtitle {
-	margin-top: -25px;
+		#subtitle {
+			margin-top: -25px; 
+		}
+	}
 }
 
 .jumbo-wrap {
 	width: 80%;
 	margin: 0 auto 0 auto;
 	padding-top: 20px;
-	color:  #FFF;
-}
-
-.call {
-}
-
-ol {
-	width: 500px;
-	margin: 0 auto 0 auto;
-	font-family: Stag-Light;
-	font-size: 18px;
-	text-align: center;
-	padding-top: 10px;
-}
-
-li {
-	font-family: Stag-Light;
-	font-size: 18px;
-	text-align: left;
-}
-
-form {
-	padding-top: 0;
-	opacity: 0.8;
-	color: black;
 }
 
 // some custom media-queries for irregularities
 
-@media (min-width: 400px) {
-	input {
-		margin-top: 20px;
-	}
-}
-
-@media (max-width: 400px) {
+@media (max-width: 550px) {
 	ol {
-		text-align: center;
-		width: 340px;
-		li {
-			text-align: center;
-		}
+		width: 100%;
 	}
-
-	.how-it-works {
-		width: 100px;
-		width:100px;
+	.jumbo-wrap {
+		width: 100%;
 	}
 }
-
-
