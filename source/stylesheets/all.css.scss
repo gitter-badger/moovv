@@ -85,6 +85,9 @@ form {
 	padding-top: 0;
 	opacity: 0.8;
 	color: $negative-text-color;
+	input {
+		margin-bottom: 10px;
+	}
 }
 
 // Base
