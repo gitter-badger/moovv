@@ -324,12 +324,6 @@ td,
 th {
   padding: 0; }
 
-/* Base Styles */
-/* line 27, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-* {
-  outline: 5px solid red; }
-
-/* Typography */
 @font-face {
   font-family: Stag-Medium;
   src: url(../fonts/Stag-Sans-Book.otf); }
@@ -339,92 +333,89 @@ th {
 @font-face {
   font-family: FontAwesome;
   src: url(../fonts/FontAwesome.otf); }
-/* line 48, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-* {
-  margin: 0px; }
+/* line 45, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+h1, h2, h3, h4, h5, h6, p, ol, li {
+  color: white; }
 
-/* line 52, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-h1, h2, h3, h4, h5, h6, p {
-  color: #FFF; }
-
-/* line 56, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+/* line 49, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
 h1 {
   font-family: "Stag-Medium";
   font-size: 38px;
   text-align: center;
   padding-top: 20px; }
 
-/* line 63, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+/* line 56, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
 h4 {
   font-family: "Stag-Medium";
-  color: #FFF;
+  font-size: 18px;
   padding: 14px 0 0 0;
-  text-align: center;
-  font-size: 18px; }
+  text-align: center; }
 
-/* line 71, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+/* line 63, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
 h5 {
   font-family: Stag-Light;
+  font-size: 18px;
+  text-align: center; }
+
+/* line 69, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+ol {
+  width: 55%;
+  margin: 0 auto 0 auto;
+  font-family: Stag-Light;
+  font-size: 18px;
   text-align: center;
-  font-size: 18px; }
+  padding: 10px 0 0 0; }
+  /* line 76, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+  ol li {
+    font-family: Stag-Light;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 0 0 30px; }
 
-/* Base */
-/* line 79, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+/* line 84, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+form {
+  padding-top: 0;
+  opacity: 0.8;
+  color: black; }
+  /* line 88, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+  form input {
+    margin-bottom: 10px; }
+
+/* line 95, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
 body {
-  background-color: #D8D8D8;
-  width: 100%;
-  height: 100vh;
-  background: url(../images/bg2.jpg) no-repeat center center fixed;
-  background-size: cover;
-  color: #FFF; }
+  background: url(../images/bg2-small.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
-/* Styles */
-/* line 90, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+/* line 102, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
 .header {
   padding: 50px 0 0 0; }
+  /* line 104, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+  .header #logo {
+    width: 8vh;
+    height: auto;
+    color: white;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-left: 2px; }
+  /* line 112, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+  .header .logo-text {
+    margin-top: -20px;
+    padding-left: 12px; }
+    /* line 115, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+    .header .logo-text #subtitle {
+      margin-top: -25px; }
 
-/* line 94, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-#logo {
-  width: 8vh;
-  height: auto;
-  color: white;
-  display: block;
-  margin: 0 auto 0 auto;
-  padding-left: 2px; }
-
-/* line 103, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-.logo-text {
-  margin-top: -20px;
-  padding-left: 12px; }
-
-/* line 108, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-#subtitle {
-  margin-top: -25px; }
-
-/* line 112, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+/* line 121, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
 .jumbo-wrap {
   width: 80%;
   margin: 0 auto 0 auto;
-  padding-top: 20px;
-  color: #FFF; }
+  padding-top: 20px; }
 
-/* line 122, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-ol {
-  width: 500px;
-  margin: 0 auto 0 auto;
-  font-family: Stag-Light;
-  font-size: 18px;
-  text-align: center;
-  padding-top: 10px; }
+@media (max-width: 550px) {
+  /* line 130, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+  ol {
+    width: 100%; }
 
-/* line 131, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-li {
-  font-family: Stag-Light;
-  font-size: 18px;
-  text-align: left; }
-
-/* line 137, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
-form {
-  padding-top: 20px;
-  color: black;
-  opacity: 0.8; }
+  /* line 133, /Users/marius/sites/moovv/source/stylesheets/all.css.scss */
+  .jumbo-wrap {
+    width: 100%; } }
