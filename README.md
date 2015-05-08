@@ -1,7 +1,7 @@
 #move project
 
 ## to do:
-- add relevant titles to pages.
+✓ add relevant titles to pages.
 - add meta tags for SE
 - add javascriot validation for form.
 - implement google webmaster tools.
@@ -12,6 +12,7 @@ https://cards-dev.twitter.com/validator
 https://dev.twitter.com/cards/markup
 - optimize backgorund image on homepage.
 - reformat stylesheets in SCSS
+
 ✓ updated middleman and livereload gems. 
 
 ## nice to have.
