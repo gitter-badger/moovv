@@ -20,11 +20,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
+  <!-- GEOLOCATOR -->
+
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= current_page.data.title || "The Middleman" %></title>
+  <title><%= current_page.data.title%></title>
   
   <%= stylesheet_link_tag "skeleton", "all" %>
   
@@ -39,7 +43,7 @@
 
   <%= yield %>
 
-<%= partial 'ga' %>
+<%= google_analytics_tag %>
 
 </body>
 </html>
