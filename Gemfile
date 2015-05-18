@@ -15,3 +15,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 #easy deploy
 gem 'middleman-deploy', '~> 1.0'
+
+# Google Analytics
+gem "middleman-google-analytics"
