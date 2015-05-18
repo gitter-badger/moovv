@@ -24,12 +24,12 @@
 // Typography
 
 @font-face {
-	font-family: Stag-Medium;
-	src: url(../fonts/Stag-Sans-Book.otf); }
+	font-family: Regular;
+	src: url(../fonts/ReplicaStdRegular.otf); }
 
 @font-face {
-	font-family: Stag-Light;
-	src: url(../fonts/Stag-Sans-Light.otf); }
+	font-family: Light;
+	src: url(../fonts/ReplicaStdLight.otf); }
 @font-face {
 	font-family: FontAwesome;
 	src: url(../fonts/FontAwesome.otf); }
@@ -40,6 +40,7 @@ $text-color: 			white;
 $negative-text-color: 	black;
 $logo-color: 			white;
 
+
 // Text styles
 
 h1, h2, h3, h4, h5, h6, p, ol, li {
@@ -47,35 +48,34 @@ h1, h2, h3, h4, h5, h6, p, ol, li {
 }
 
 h1 {
-	font-family: "Stag-Medium";
+	font-family: "Regular";
 	font-size: 38px;
 	text-align: center;
 	padding-top: 20px;
 }
 
 h4 {
-	font-family: "Stag-Medium";
+	font-family: "Regular";
 	font-size: 18px;
 	padding: 14px 0 0 0;
 	text-align: center;
 }
 
 h5 {
-	font-family: Stag-Light;
+	font-family: Light;
 	font-size: 18px;
 	text-align: center;
 }
 
 ol {
-	width: 55%;
+	width: 70%;
 	margin: 0 auto 0 auto;
-	font-family: Stag-Light;
-	font-size: 18px;
+	font-family: Light;
+	font-size: 22px;
 	text-align: center;
-	padding: 10px 0 0 0;
+	padding: 20px 0 0 0;
 	li {
-	font-family: Stag-Light;
-	font-size: 18px;
+	font-family: Light;
 	text-align: left;
 	padding: 0 0 0 30px;
 	}
@@ -119,6 +119,10 @@ body {
 	width: 80%;
 	margin: 0 auto 0 auto;
 	padding-top: 20px;
+	#city {
+		border-bottom: solid 3px $text-color;
+		opacity: 1;
+	}
 }
 
 // some custom media-queries for irregularities
