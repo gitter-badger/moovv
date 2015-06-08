@@ -18,3 +18,8 @@ gem 'middleman-deploy', '~> 1.0'
 
 # Google Analytics
 gem "middleman-google-analytics"
+
+#install imagemagick if you don't have it : "brew install imagemagick"
+gem "middleman-favicon-maker", "~> 3.5"
+
+gem 'slim'
