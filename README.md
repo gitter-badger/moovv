@@ -1,5 +1,7 @@
 #move project
 ## to do:
+
+[![Join the chat at https://gitter.im/glennpjones/moovv](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/glennpjones/moovv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 - reformat stylesheets in SCSS
 - add relevant titles to pages.
 - add meta tags for SE
